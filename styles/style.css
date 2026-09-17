@@ -9,6 +9,9 @@ html {
 }
 
 .page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -17,6 +20,230 @@ html {
   font-size: 18px;
   background-color: #1b1919;
 }
+
+.content{
+  display: flex;
+  width: 1140px;
+  height: 534px;
+}
+
+/*контейнер со вставкой видео - городом - сутками - кнопкой*/
+.result{
+  flex: 0 0 711px;
+  height: 456px;
+  margin: 78px 30px 0 0 ;
+}
+
+/*видео - большаяя вставка */
+.result__video{
+  width: 711px;
+  height: 386px;
+  margin: 0 0 16px 0;
+}
+
+/*контейнер для города - суток - кнопка найти*/
+.search-form{
+  display: flex;
+  width: 711px;
+  height: 54px;
+  /*margin-top: px ;*/
+}
+
+
+/*контейнер города*/
+.search-form__fieldset:nth-child(1){
+  width: 225px;
+  height: 54px;
+  border: none;
+}
+
+/*город*/
+.search-form__label-text .visually-hidden{
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 400;           /* Weight: 400 */
+  font-style: normal;         /* Style: Regular */
+  font-size: 18px;            /* Size: 18px */
+  /* Межстрочный интервал */
+  line-height: 100%;
+  /* Межбуквенный интервал */
+  letter-spacing: 0;
+  height: 22px;
+  /* Сброс стандартных отступов h2 */
+  margin: 0;
+}
+
+/*стиль текста подсказка внутри плейса*/
+.search-form__textfield::placeholder {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  /* Межстрочный интервал */
+  line-height: 100%;
+  /* Межбуквенный интервал */
+  letter-spacing: 0;
+  height: 22px;
+  /* Сброс стандартных отступов h2 */
+  margin: 0;
+}
+
+
+/*полоски для поисковика*/
+.search-form__textfield{
+  margin-left: 0;
+  background: transparent;
+  width: 100%;
+  border: none;
+  border-top: 1px solid #444;  /* Верхняя линия */
+  border-bottom: 1px solid #444; /* Нижняя линия */
+}
+
+/*фон поисковика городов*/
+
+/*размеры для суток (2 ребенок)*/
+.search-form__fieldset:nth-child(2){
+  width: 212px;
+  height: 49px;
+  margin-bottom: 5px;
+  margin-left: 40px;
+  border: none;
+}
+
+/*сутки текст*/
+.search-form__fieldset-title{
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 400;           /* Weight: 400 */
+  font-style: normal;         /* Style: Regular */
+  font-size: 18px;            /* Size: 18px */
+  /* Межстрочный интервал */
+  line-height: 100%;
+  /* Межбуквенный интервал */
+  letter-spacing: 0;
+  height: 22px;
+  /* Сброс стандартных отступов h2 */
+  margin: 0;
+}
+
+/*кнопка найти*/
+.search-form__submit-button {
+  width: 194px;
+  height: 34px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  margin-left: 40px;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+/*контейнер по-смотри */
+.content__details{
+  width: 399px;
+  height: 534px;
+margin-top: 0;
+  margin-left: 0;
+}
+
+.content__card-link{
+  text-decoration: none;
+
+}
+
+.title {
+  width: 260px;
+  height: 210px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 75px;
+  /* Режим текста */
+  text-transform: uppercase;
+  letter-spacing: 0;
+  /* Межстрочный интервал */
+  line-height: 94%;
+
+  text-align: left;                /* Выравнивание текста по левому краю */
+  word-wrap: break-word;           /* Чтобы очень длинные слова не вылезали за 260px */
+  margin: 0;                       /* Сброс стандартных отступов */
+}
+
+.content__accent{
+  color: rgba(255, 255, 255, 0.3)
+}
+
+/*скроллбар с карточками*/
+.content__list-container{
+  width: 399px;
+  height: 298px;
+  margin-top: 26px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/*контейнер описания видео и заставки */
+.content__video-card{
+  width: 398px;
+  height: 107px;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+/*название города*/
+.content__video-card-title{
+  margin-left: 2px;
+  width: 200px;
+
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  /* Режим текста */
+  text-transform: uppercase;
+  letter-spacing: 0;
+  /* Межстрочный интервал и высота */
+  line-height: 100%;
+  height: 30px;
+  color: white;
+  text-decoration: none;
+}
+
+/*описание*/
+.content__video-card-description{
+  margin-left: 2px;
+  margin-top: 5px;
+  width: 200px;
+  height: 65px;
+
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 16px;
+  letter-spacing: 0;
+  color: white;
+  text-decoration: none;
+}
+
+/*само видео*/
+.content__video-card-thumbnail{
+  margin-right: 3px;
+  width: 194px;
+  height: 103px;
+}
+
+/*кнопка показать больше*/
+.button.more-button{
+  width: 399px;
+  height: 34px;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+
+
+
+
+
 
 h1,
 h2,
